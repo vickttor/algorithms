@@ -15,9 +15,10 @@ def selectionSort(arr):
   for i in range(1, len(arr)):
     lower_index = searchLower(arr)
     new_arr.append(arr.pop(lower_index))
-  
+
   return new_arr
 
 list = [10,6,4,8,12,16,1,3]
+
 
 print(selectionSort(list))

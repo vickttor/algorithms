@@ -9,10 +9,10 @@
 # Since we define a base case the infinite loop will not happens!
 
 def countdown(i):
-    print(i)
-    if(i > 0):
-      countdown(i - 1)
-    else:
-      return
+  print(i)
+  if(i > 0):
+    countdown(i - 1)
+  else:
+    return
     
 countdown(10)

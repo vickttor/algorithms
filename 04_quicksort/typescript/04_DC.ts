@@ -1,5 +1,5 @@
 
-const list = [1,2,3,4,5,6];
+const list = [1,2,3,13,4,5,6];
 
 /**
  * 
@@ -11,7 +11,7 @@ function sum(arr: number[]): number {
   return arr[0] + sum(arr.slice(1))
 }
 
-console.log(sum(list));
+console.log("Sum: " + sum(list));
 
 /**
  * 
@@ -20,25 +20,19 @@ console.log(sum(list));
  */
 function len<T>(arr: T[]): number {
   let count = 0;
-
-  for(let i in arr) 
-    if(arr.hasOwnProperty(i)) 
-      count++;
-
-  if(count === 0) 
-    return 0
-
+  for(let i in arr) count++;
+  if(count === 0) return 0
   return 1 + len(arr.slice(1));
 }
 
-console.log(len(list));
-
-const letters = ["A", "B", "D", "C", "E", "J", "K", "O", "Z"];
-
-console.log(len(letters));
-
+console.log("Length: " + len(list));
 
 function max(arr: number[]): number {
-  
-  return 1;
+  let count = 0;
+  for(let i in arr) count++;
+  if(count == 2) return arr[0] > arr[1] ? arr[0] : arr[1];
+  let subMax = max(arr.slice(1));
+  return arr[0] > subMax ? arr[0] : subMax;
 }
+
+console.log("Max: " + max(list));
