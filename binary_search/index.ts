@@ -34,11 +34,3 @@ const name_to_be_found = "Carlos"
 const find_carlos = binary_search(names.map(v=>v.toLowerCase()), "Carlos".toLowerCase())
 
 console.log("Resultado (Carlos) ", find_carlos); // successed
-
-
-
-
-
-
-
-
