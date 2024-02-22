@@ -1,4 +1,5 @@
-// Big O (Log n)
+// Implementação em Typescript
+// O(Log n)
 function binary_search<T>(list: T[], item: T): number {
     
     let low = 0
@@ -21,7 +22,7 @@ function binary_search<T>(list: T[], item: T): number {
 const numbers = [1, 2, 5, 8, 9, 12, 27]
 
 const find_nine = binary_search(numbers, 9)
-console.log("Resultado (9): ", find_nine) // Successed
+console.log("Resultado (9): ", find_nine) // Success
 
 const find_thirty = binary_search(numbers, 30)
 console.log("Resultado (30): ", find_thirty) // Fails
@@ -33,4 +34,4 @@ const name_to_be_found = "Carlos"
 
 const find_carlos = binary_search(names.map(v=>v.toLowerCase()), "Carlos".toLowerCase())
 
-console.log("Resultado (Carlos) ", find_carlos); // successed
+console.log("Resultado (Carlos) ", find_carlos); // Success
