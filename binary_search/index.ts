@@ -1,4 +1,3 @@
-// Implementação em Typescript
 // O(Log n)
 function binary_search<T>(list: T[], item: T): number {
     
